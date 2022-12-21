@@ -50,7 +50,12 @@ const SideBar = () => {
 
   return (
     <Box display="flex" height="100%">
-      <Sidebar backgroundColor={`${colors.primary[400]}`}>
+      <Sidebar
+        backgroundColor={`${colors.primary[400]}`}
+        rootStyles={{
+          borderRight: "none",
+        }}
+      >
         <Menu
           iconShape="square"
           menuItemStyles={{
