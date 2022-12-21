@@ -38,9 +38,7 @@ const BarChart = ({ isDashboard = false }) => {
           },
           tooltip: {
             container: {
-              background: "#ffffff",
-              color: "#333333",
-              fontSize: 12,
+              color: colors.primary[500],
             },
           },
         },
