@@ -29,6 +29,9 @@ const Item = ({ title, to, icon, selected, setSelected }) => {
         "&:hover": {
           backgroundColor: "#eecef9",
         },
+        "&.active": {
+          backgroundColor: colors.primary[400],
+        },
       }}
       onClick={() => setSelected(title)}
       icon={icon}
@@ -55,9 +58,11 @@ const SideBar = () => {
               // only apply styles on first level elements of the tree
               if (level === 0)
                 return {
-                  backgroundColor: active ? "#6870fa" : undefined,
+                  color: active ? "#6870fa" : undefined,
+                  backgroundColor: colors.primary[400],
                   "&:hover": {
                     backgroundColor: "#868dfb",
+                    color: colors.grey[100],
                   },
                 };
             },
