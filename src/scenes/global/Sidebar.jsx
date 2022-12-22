@@ -90,7 +90,7 @@ const SideBar = () => {
                 ml="15px"
               >
                 <Typography variant="h3" color={colors.grey[100]}>
-                  ADMINIS
+                  ADMIN BOARD
                 </Typography>
                 <IconButton>
                   <MenuOutlinedIcon />
