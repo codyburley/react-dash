@@ -1,8 +1,6 @@
-import { Box, IconButton, Typography, useTheme } from "@mui/material";
-import DownloadOutlinedIcon from "@mui/icons-material/DownloadOutlined";
+import { Box, Typography, useTheme } from "@mui/material";
 import GeographyChart from "./GeographyChart";
 import BarChart from "./BarChart";
-import { mockTransactions } from "../data/mockData";
 import { tokens } from "../theme";
 import ProgressCircle from "./ProgressCircle";
 
