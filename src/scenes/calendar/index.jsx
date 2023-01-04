@@ -21,6 +21,12 @@ const Calendar = () => {
   const colors = tokens(theme.palette.mode);
   const [currentEvents, setCurrentEvents] = useState([]);
 
+  const date1 = new Date().toISOString().split("T")[0];
+  const someDate = new Date();
+  const numberOfDaysToAdd = 7;
+  const result = someDate.setDate(someDate.getDate() + numberOfDaysToAdd);
+  const date2 = new Date(result).toISOString().split("T")[0];
+
   const handleDateClick = (selected) => {
     const title = prompt("Please enter a new title for your event");
     const calendarApi = selected.view.calendar;
@@ -109,8 +115,8 @@ const Calendar = () => {
             eventClick={handleEventClick}
             eventsSet={(events) => setCurrentEvents(events)}
             initialEvents={[
-              { id: "1234", title: "All-day event", date: "2022-12-21" },
-              { id: "4321", title: "Timed event", date: "2022-12-22" },
+              { id: "1234", title: "All-day event", date: date1 },
+              { id: "4321", title: "Timed event", date: date2 },
             ]}
           />
         </Box>
